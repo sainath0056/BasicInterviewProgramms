@@ -26,8 +26,9 @@ public static int sqrt(int n){
 		// Write your code here
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
-        
+        System.out.println("Super");
         System.out.println(sqrt(n));
+   
 
 	}
 
