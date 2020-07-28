@@ -11,8 +11,7 @@ public class Palnedrome {
 		t=num;
 		
 		while(num!=0) {
-			r=num%10;
-			sum=sum*10+r;
+			sum=sum*10+num%10;;
 			num=num/10;
 			
 		}
@@ -28,7 +27,7 @@ public class Palnedrome {
 		// TODO Auto-generated method stub
 
 		
-		isPalendrome(121);
+		isPalendrome(151);
 	}
 
 }
