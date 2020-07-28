@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Interview.SingletonTest">
+      <class name="SeleniumPractice.LinkedIn">
         <methods>
-          <include name="testMethod"/>
-          <include name="quitBrowser"/>
-          <include name="setup"/>
+          <include name="initDriver"/>
+          <include name="LinkedInSearch" invocation-numbers="0"/>
+          <include name="quitBrowswer"/>
         </methods>
-      </class> <!-- Interview.SingletonTest -->
+      </class> <!-- SeleniumPractice.LinkedIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

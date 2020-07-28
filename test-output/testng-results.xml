@@ -2,46 +2,47 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-01T09:37:47Z" name="Default suite" finished-at="2020-04-01T09:37:54Z" duration-ms="6804">
+  <suite started-at="2020-07-24T12:17:02Z" name="Default suite" finished-at="2020-07-24T12:17:19Z" duration-ms="17540">
     <groups>
     </groups>
-    <test started-at="2020-04-01T09:37:47Z" name="Default test" finished-at="2020-04-01T09:37:54Z" duration-ms="6804">
-      <class name="Interview.SingletonTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Interview.SingletonTest@c0c2f8d]" started-at="2020-04-01T09:37:47Z" name="setup" finished-at="2020-04-01T09:37:53Z" duration-ms="5998" status="PASS">
+    <test started-at="2020-07-24T12:17:02Z" name="Default test" finished-at="2020-07-24T12:17:19Z" duration-ms="17540">
+      <class name="SeleniumPractice.LinkedIn">
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:SeleniumPractice.LinkedIn@79d8407f]" started-at="2020-07-24T12:17:02Z" name="initDriver" finished-at="2020-07-24T12:17:11Z" duration-ms="9820" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testMethod()[pri:0, instance:Interview.SingletonTest@c0c2f8d]" started-at="2020-04-01T09:37:53Z" name="testMethod" finished-at="2020-04-01T09:37:53Z" duration-ms="29" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+        </test-method> <!-- initDriver -->
+        <test-method signature="LinkedInSearch(java.lang.String, java.lang.String)[pri:0, instance:SeleniumPractice.LinkedIn@79d8407f]" started-at="2020-07-24T12:17:11Z" name="LinkedInSearch" data-provider="searchData" finished-at="2020-07-24T12:17:18Z" duration-ms="6397" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sainath0056@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[linkedin25]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[invalid argument
-  (Session info: chrome=80.0.3987.149)
+              <![CDATA[Cannot locate an element using xpath=//input[@class='search-global-typeahead__input always-show-placeholder']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LIN80015757', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\STALAG~1.IGA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1b2ce06179b4b470f057c6cae9db90f5]]>
+System info: host: 'LIN80015757', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=80.0.3987.149)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@class='search-global-typeahead__input always-show-placeholder']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LIN80015757', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\STALAG~1.IGA\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51343}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1b2ce06179b4b470f057c6cae9db90f5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at Interview.SingletonTest.testMethod(SingletonTest.java:20)
+System info: host: 'LIN80015757', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at SeleniumPractice.LinkedIn.LinkedInSearch(LinkedIn.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,15 +70,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Interview.SingletonTest@c0c2f8d]" started-at="2020-04-01T09:37:53Z" name="quitBrowser" finished-at="2020-04-01T09:37:54Z" duration-ms="746" status="PASS">
+        </test-method> <!-- LinkedInSearch -->
+        <test-method is-config="true" signature="quitBrowswer()[pri:0, instance:SeleniumPractice.LinkedIn@79d8407f]" started-at="2020-07-24T12:17:18Z" name="quitBrowswer" finished-at="2020-07-24T12:17:19Z" duration-ms="1166" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- Interview.SingletonTest -->
+        </test-method> <!-- quitBrowswer -->
+      </class> <!-- SeleniumPractice.LinkedIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
