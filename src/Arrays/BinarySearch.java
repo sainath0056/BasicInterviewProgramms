@@ -3,11 +3,11 @@ package Arrays;
 public class BinarySearch {
 
 	
-	public static int binarySearch(int[] arr,int ele) {
-		int s=0;
-		int e=arr.length-1;
-		while(s<=e) {
+	public static int binarySearch(int[] arr, int s, int e,int ele) {
+		
 		int mid=(s+e)/2;
+		while(s<=e) {
+		
 		if(arr[mid]>ele) {
 			e=mid-1;
 		}else if(arr[mid]<ele) {
@@ -23,7 +23,9 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[]= {1,4,7,10,20,35,40};
-		int index=binarySearch(arr,90);
+		int ele=10;
+		int e=arr.length-1;
+		int index=binarySearch(arr,0,e,ele);
 		System.out.println(index);
 
 	}

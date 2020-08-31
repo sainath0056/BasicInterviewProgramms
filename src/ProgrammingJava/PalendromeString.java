@@ -6,7 +6,7 @@ public class PalendromeString {
 
 	public static void main(String[] args) {
 	
-		String str="madkm";
+		String str="amma";
 		int len=str.length();
 		String rev="";
 		String temp;

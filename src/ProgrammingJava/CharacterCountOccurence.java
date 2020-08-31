@@ -18,15 +18,16 @@ public class CharacterCountOccurence {
 				charcountMap.put(c,charcountMap.get(c)+1);
 			}else {
 				charcountMap.put(c, 1);
+				
 			}
 		}
-		for(Map.Entry entry:charcountMap.entrySet()) {
-			if(entry.getKey().equals("\n")) {
-				//System.out.println("WhiteSpcae:" +entry.getKey());
-			}
-			System.out.println(entry.getKey() +" "+entry.getValue());
-		}
-		
+//		for(Map.Entry entry:charcountMap.entrySet()) {
+//			if(entry.getKey().equals("\n")) {
+//				//System.out.println("WhiteSpcae:" +entry.getKey());
+//			}
+//			System.out.println(entry.getKey() +" "+entry.getValue());
+//		}
+		System.out.println(inputString+" : "+charcountMap);
 		
 	}
 
